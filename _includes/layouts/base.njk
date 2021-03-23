@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>C:\Users\autyt\Documents\GitHub\eleventy-base-blog\css
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/bootstrap.min.css' | url }}">
-    <link rel="stylesheet" href="{{'/css.index.css'}} | url }}">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
   </head>
   <body>
     <header>
-      <a href="{{ '/' | url }}"><img src="/img/download.jfif" /></a>
+      <h1 class="home"><a href="{{ '/' | url }}"><img src="/img/united header pic.jfif" /></a></h1>
 
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
@@ -29,13 +29,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="/img/FAC winners.jfif " class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="/img/Treble.jfif" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="/img/giggs.jfif" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
@@ -55,7 +55,24 @@
 
       {{ content | safe }}
     </main>
+<aside>
 
+This should be in a side bar that appears on all pages
+<iframe src="https://open.spotify.com/embed/album/1NYnaDcc6GrITESeZ53Sxn" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+ 
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet fermentum elit. Pellentesque finibus accumsan suscipit. Mauris accumsan sit amet quam fermentum malesuada. Mauris bibendum laoreet urna, quis maximus nunc rhoncus vel. In in volutpat purus, vitae pretium ante. Curabitur vel magna accumsan, interdum metus sit amet, consequat metus. Curabitur sem elit, malesuada volutpat magna vitae, laoreet mattis elit.</p>
+
+ 
+
+ 
+
+ 
+
+</aside>
     <footer></footer>
 <script src="{{ '/js/bootstrap.min.js' | url }}"></script>
     <!-- Current page: {{ page.url | url }} -->

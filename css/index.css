@@ -1,17 +1,41 @@
-img{
-
-  max-width:200px;
-  
-  }
-  
-  .nav{
-  
+header img{
+  max-width:767px;
+}
+.nav{
   float:right;
-  
-  }
-  
-  .nav li{
-  
+}
+.nav li{
   padding:30px;
-  
+}
+body{
+  width:100%;
+}
+main{
+  width:calc(66.666%);
+  padding:30px;
+  float:left;
+}
+aside{
+  width:calc(33.333%);
+  padding:30px;
+  float:left;
+}
+.iframeContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.iframeContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  main,
+  aside{
+    width:100%;
   }
+}
